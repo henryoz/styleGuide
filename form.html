@@ -1,0 +1,362 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms | Simitive Style Guide</title>
+    <link rel="stylesheet" href="css/app.css" />
+    <script src="bower_components/modernizr/modernizr.js"></script>
+</head>
+<body>
+<div class="row" style="padding-bottom: 200px;">
+
+    <div class="large-3 medium-4 columns">
+        <div class="hide-for-small">
+            <div class="sidebar">
+                <h5>Simitive Style Guide</h5>
+                <nav>
+                <ul class="side-nav">
+                    <li class="heading">Overview</li>
+                    <li class="divider"></li>
+                    <li class="heading">Form Elements</li>
+                    <li>Text</li>
+                    <li>Textarea</li>
+                    <li>
+                        Checkbox
+                        <ul>
+                            <li>Switch</li>
+                        </ul>
+                    </li>
+                    <li>Radio</li>
+                    <li>Dropdown</li>
+                    <li>Slider</li>
+                    <li>Datepicker</li>
+                    <li class="divider"></li>
+                    <li class="heading">Guidance &amp; Feedback</li>
+                    <li>Containers</li>
+                    <li>Legends</li>
+                    <li>Placeholders</li>
+                    <li>Errors</li>
+                    <li>Guidance messages</li>
+                    <li>Character counters</li>
+                    <li>Auto-completion</li>
+                    <li class="divider"></li>
+                    <li class="heading">Actions &amp; Flow</li>
+                    <li>Enabled / disabled fields</li>
+                    <li>Locked fields</li>
+                    <li>Submit</li>
+                    <li>Cancel</li>
+                    <li>Save</li>
+                    <li>Clear</li>
+                    <li class="divider"></li>
+                    <li class="heading">Accessibility</li>
+                    <li>OAF overview</li>
+                    <li>Screen readers</li>
+                    <li>Color blindness</li>
+                </ul>
+            </nav>
+            </div>
+        </div>
+    </div>
+
+    <div class="large-9 medium-8 columns">
+        <h1>Simitive Style & Usage</h1>
+
+        <h2>Forms</h2>
+
+        <h3>Overview</h3>
+
+        <p>One of the primary points of interaction with the Simitive product is via forms and their elements. Users are required to manage their profiles, fill out lengthy reviews, manage allocations and other tasks, all of which require manual input of information. Our goal is to provide forms that are intuitive both in their visual presentation and flow. We must also offer appropriate, informative guidance and feedback to guide users through the process with zero confusion.</p>
+
+        <p>Our forms must also be accessible via touch, keyboard, and mouse input and be parseable by tools such as screen readers and others as defined by the <a href="http://bit.ly/1M1xVRq" target="_blank">Open Accessibility Framework</a>.</p>
+
+        <p>This section of the guide covers basic appearance and functionality as it relates to our forms and their elements, using explanations and examples.</p>
+
+
+        <hr><h3>Form Elements</h3>
+        <h4>Text</h4>
+        <p>By far the most versatile and widely used form element, text fields allow users to enter free text for a large variety of purposes. Standard text fields take up a single line (multi-line text entry is handled by the separate textarea element) and may vary in horizontal size, occupying the most appropriate span of the view as is required.</p>
+
+        <!-- Text input example-->
+        <form>
+            <fieldset>
+                <legend>Text Fields</legend>
+                <div class="row">
+                    <div class="large-12 columns">
+                        <label>Full width
+                            <input type="text" placeholder="large-12.columns" />
+                        </label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="large-4 columns">
+                        <label>Responsive ordering 1
+                            <input type="text" placeholder="large-4.columns" />
+                        </label>
+                    </div>
+                    <div class="large-4 columns">
+                        <label>Responsive ordering 2
+                            <input type="text" placeholder="large-4.columns" />
+                        </label>
+                    </div>
+                    <div class="large-4 columns">
+                        <div class="row collapse">
+                            <label>Responsive ordering 3</label>
+                            <div class="small-3 columns">
+                                <span class="prefix">@</span>
+                            </div>
+                            <div class="small-9 columns">
+                                <input type="text" placeholder="Twitter" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+
+        <ul class="accordion" data-accordion>
+            <li class="accordion-navigation">
+                <a href="#panel1">Code Example - Text fields</a>
+                <div id="panel1" class="content">
+                    <pre><code>
+&lt;form&gt;
+  &lt;fieldset&gt;
+    &lt;legend&gt;Text Fields&lt;/legend&gt;
+    &lt;div class=&quot;row&quot;&gt;
+      &lt;div class=&quot;large-12 columns&quot;&gt;
+        &lt;label&gt;Full width
+          &lt;input type=&quot;text&quot; placeholder=&quot;large-12.columns&quot;/&gt;
+        &lt;/label&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;row&quot;&gt;
+      &lt;div class=&quot;large-4 columns&quot;&gt;
+        &lt;label&gt;Responsive ordering 1
+          &lt;input type=&quot;text&quot; placeholder=&quot;large-4.columns&quot;/&gt;
+        &lt;/label&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;large-4 columns&quot;&gt;
+        &lt;label&gt;Responsive ordering 2
+          &lt;input type=&quot;text&quot; placeholder=&quot;large-4.columns&quot;/&gt;
+        &lt;/label&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;large-4 columns&quot;&gt;
+        &lt;div class=&quot;row collapse&quot;&gt;
+          &lt;label&gt;Responsive ordering 3&lt;/label&gt;
+          &lt;div class=&quot;small-3 columns&quot;&gt;
+            &lt;span class=&quot;prefix&quot;&gt;@&lt;/span&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;small-9 columns&quot;&gt;
+            &lt;input type=&quot;text&quot; placeholder=&quot;Twitter&quot; /&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/fieldset&gt;
+&lt;/form&gt;
+                        </code></pre>
+                    </div>
+                </li>
+            </ul>
+
+        <br>
+
+        <p>Navigating through text fields may be done via touching, clicking or tabbing through elements. It must be clear to the user at all times where they are in the form.</p>
+
+        <hr>
+        <h4>Textarea</h4>
+
+        <form>
+            <div class="row">
+                <div class="large-12 columns">
+                    <label>Text area example
+                        <textarea placeholder="Placeholder text"></textarea>
+                    </label>
+                </div>
+            </div>
+        </form>
+
+        <ul class="accordion" data-accordion>
+            <li class="accordion-navigation">
+                <a href="#panel2">Code Example - Text area</a>
+                <div id="panel2" class="content">
+        <pre><code>
+&lt;form&gt;
+  &lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;large-12 columns&quot;&gt;
+      &lt;label&gt;Text area example
+      &lt;textarea placeholder=&quot;Placeholder text&quot;&gt;&lt;/textarea&gt;
+      &lt;/label&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/form&gt;
+        </code></pre>
+                    </div></li></ul><br>
+
+
+        <hr>
+        <h4>Checkbox</h4>
+
+        <form>
+            <div class="row">
+                <div class="large-12 columns">
+                    <label>Ch-ch-check it out</label>
+                    <input id="option1" type="checkbox"><label for="option1">Option 1</label>
+                    <input id="option2" type="checkbox"><label for="option2">Option 2</label>
+                    <input id="option3" type="checkbox"><label for="option3">Option 2</label>
+                    <input id="option4" type="checkbox"><label for="option4">Option 2</label>
+                </div>
+            </div>
+        </form>
+
+        <ul class="accordion" data-accordion>
+            <li class="accordion-navigation">
+                <a href="#panel3">Code Example - Checkbox</a>
+                <div id="panel3" class="content">
+        <pre><code>
+&lt;form&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;large-12 columns&quot;&gt;
+            &lt;label&gt;Ch-ch-check it out&lt;/label&gt;
+            &lt;input id=&quot;option1&quot; type=&quot;checkbox&quot;&gt;
+            &lt;label for=&quot;option1&quot;&gt;Option 1&lt;/label&gt;
+            &lt;input id=&quot;option2&quot; type=&quot;checkbox&quot;&gt;
+            &lt;label for=&quot;option2&quot;&gt;Option 2&lt;/label&gt;
+            &lt;input id=&quot;option3&quot; type=&quot;checkbox&quot;&gt;
+            &lt;label for=&quot;option3&quot;&gt;Option 2&lt;/label&gt;
+            &lt;input id=&quot;option4&quot; type=&quot;checkbox&quot;&gt;
+            &lt;label for=&quot;option4&quot;&gt;Option 2&lt;/label&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/form&gt;
+        </code></pre>\</div></li></ul><br>
+
+        <hr>
+        <h4>Radio</h4>
+
+        <form>
+            <div class="row">
+                <div class="large-6 columns">
+                    <label>Choose Your Favorite</label>
+                    <input type="radio" name="meat" value="Steak" id="meatSteak"><label for="meatSteak">Steak</label>
+                    <input type="radio" name="meat" value="Chicken" id="meatChicken"><label for="meatChicken">Chicken</label>
+                    <input type="radio" name="meat" value="Tuna" id="meatTuna"><label for="meatTuna">Tuna</label>
+                    <input type="radio" name="meat" value="Pork" id="meatPork"><label for="meatPork">Pork</label>
+                </div>
+            </div>
+        </form>
+
+        <ul class="accordion" data-accordion>
+            <li class="accordion-navigation">
+                <a href="#panel4">Code Example - Radio</a>
+                <div id="panel4" class="content">
+        <pre><code>
+&lt;form&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;large-6 columns&quot;&gt;
+            &lt;label&gt;Choose Your Favorite&lt;/label&gt;
+            &lt;input type=&quot;radio&quot; name=&quot;meat&quot; value=&quot;Steak&quot; id=&quot;steak&quot;&gt;
+            &lt;label for=&quot;meatSteak&quot;&gt;Steak&lt;/label&gt;
+            &lt;input type=&quot;radio&quot; name=&quot;meat&quot; value=&quot;Chicken&quot; id=&quot;chicken&quot;&gt;
+            &lt;label for=&quot;meatChicken&quot;&gt;Chicken&lt;/label&gt;
+            &lt;input type=&quot;radio&quot; name=&quot;meat&quot; value=&quot;Tuna&quot; id=&quot;tuna&quot;&gt;
+            &lt;label for=&quot;meatTuna&quot;&gt;Tuna&lt;/label&gt;
+            &lt;input type=&quot;radio&quot; name=&quot;meat&quot; value=&quot;Pork&quot; id=&quot;pork&quot;&gt;
+            &lt;label for=&quot;meatPork&quot;&gt;Pork&lt;/label&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/form&gt;
+        </code></pre></div></li></ul><br>
+
+        <hr>
+        <h4>Dropdown</h4>
+
+        <form>
+            <div class="row">
+                <div class="large-12 columns">
+                    <label>Choose an option
+                        <select>
+                            <option value="default">Please select...</option>
+                            <option value="protein">Protein</option>
+                            <option value="carbs">Carbohydrates</option>
+                            <option value="fat">Fat</option>
+                            <option value="fibre">Fibre</option>
+                        </select>
+                    </label>
+                </div>
+            </div>
+        </form>
+
+        <ul class="accordion" data-accordion>
+            <li class="accordion-navigation">
+                <a href="#panel5">Code Example - Dropdown</a>
+                <div id="panel5" class="content">
+        <pre><code>
+&lt;form&gt;
+  &lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;large-12 columns&quot;&gt;
+      &lt;label&gt;Choose an option
+        &lt;select&gt;
+          &lt;option value=&quot;default&quot;&gt;Please select...&lt;/option&gt;
+          &lt;option value=&quot;protein&quot;&gt;Protein&lt;/option&gt;
+          &lt;option value=&quot;carbs&quot;&gt;Carbohydrates&lt;/option&gt;
+          &lt;option value=&quot;fat&quot;&gt;Fat&lt;/option&gt;
+          &lt;option value=&quot;fibre&quot;&gt;Fibre&lt;/option&gt;
+        &lt;/select&gt;
+      &lt;/label&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/form&gt;
+        </code></pre></div></li></ul><br>
+
+        <hr>
+        <h4>Slider</h4>
+
+        <div>
+        <form>
+            <div class="range-slider radius" data-slider="50">
+                <span class="range-slider-handle" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" style="-webkit-transform: translateX(431px); transform: translateX(431px);"></span>
+                <span class="range-slider-active-segment" style="width: 50%;"></span>
+                <input type="hidden" value="50">
+            </div>
+        </form>
+        </div>
+
+        <ul class="accordion" data-accordion>
+            <li class="accordion-navigation">
+                <a href="#panel6">Code Example - Slider</a>
+                <div id="panel6" class="content">
+        <pre><code>
+&lt;form&gt;
+  &lt;div class=&quot;range-slider radius&quot; data-slider=&quot;50&quot;&gt;
+    &lt;span class=&quot;range-slider-handle&quot;
+      aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot;
+      aria-valuenow=&quot;50&quot;
+      style=&quot;-webkit-transform: translateX(431px);
+      transform: translateX(431px);&quot;&gt;
+    &lt;/span&gt;
+    &lt;span class=&quot;range-slider-active-segment&quot; style=&quot;width: 50%;&quot;&gt;
+    &lt;/span&gt;
+    &lt;input type=&quot;hidden&quot; value=&quot;50&quot;&gt;
+  &lt;/div&gt;
+&lt;/form&gt;
+        </code></pre></div></li></ul><br>
+
+        <hr>
+        <h4>Datepicker</h4>
+        <p>Foundation does not come with its own datepicker. We should consider using the <a href="https://jqueryui.com/datepicker/" target="_blank">jQueryUI datepicker</a> and styling it to match.</p>
+
+    </div>
+
+
+    <br><br><br>
+
+</div>
+
+
+
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/foundation/js/foundation.min.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
