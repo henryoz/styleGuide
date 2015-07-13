@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Panels | Simitive Style Guide</title>
+  <link rel="stylesheet" href="css/app.css" />
+  <script src="bower_components/modernizr/modernizr.js"></script>
+</head>
+
+<body>
+
+<!-- The following is styling that is specific to this page, but is not part of the core Simitive style guide -->
+<style>
+h3.usage-case {
+  font-size: 2em;
+  border-bottom: 1px solid #999;
+  margin-top: 40px;
+}
+code {
+  font-size: 13px;
+}
+.example {
+  padding: 15px;
+  border: 1px solid #2a7;
+}
+</style>
+
+
+<div class="row">
+  <div class="large-12 columns">
+    <h1>Panels</h1>
+    <p>
+      Panels can be used for a variety of things.
+    </p>
+  </div>
+</div>
+
+<!--
+BASIC PANEL
+-->
+<div class="row">
+  <div class="large-12 columns">
+    <h3 class="usage-case">Basic Panel</h3>
+    <h4>When to use them:</h4>
+    <p>
+      <ul>
+        <li>IDK</li>
+      </ul>
+    </p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="large-7 columns">
+    <div class="panel">
+      <pre><code>&lt;div class=&quot;panel&quot;&gt;</code></pre>
+      <span style="font-family:monospace;">// Content...</span>
+      <pre><code>&lt;/div&gt;</code></pre>
+    </div>
+  </div>
+  <div class="large-5 columns">
+    <div class="panel">
+      <h3>Some stuff</h3>
+      <p>Here is a load of content in this panel</p>
+      <p>Craft beer migas sartorial, narwhal Austin distillery pour-over before they sold out. Actually Austin keytar keffiyeh, swag umami 3 wolf moon hashtag blog ennui Neutra Pitchfork Thundercats. Locavore lo-fi actually American Apparel asymmetrical disrupt.</p>
+    </div>
+  </div>
+</div>
+
+
+<!--
+COLOURFUL PANEL
+-->
+<div class="row">
+  <div class="large-12 columns">
+    <h3 class="usage-case">Panel with Header</h3>
+    <h4>When to use them:</h4>
+    <p>
+      <ul>
+        <li>Note to self: come up with better class name than 'with-header'.</li>
+      </ul>
+    </p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="large-7 columns">
+    <div class="panel">
+      <pre><code>&lt;div class=&quot;panel with-header&quot;&gt;</code></pre>
+      <pre><code>&lt;div class=&quot;panel-header&quot;&gt;</code></pre>
+      <span style="font-family:monospace;">// Header...</span>
+      <pre><code>&lt;/div&gt;</code></pre>
+      <pre><code>&lt;div class=&quot;panel-content&quot;&gt;</code></pre>
+      <span style="font-family:monospace;">// Content...</span>
+      <pre><code>&lt;/div&gt;</code></pre>
+      <pre><code>&lt;/div&gt;</code></pre>
+    </div>
+  </div>
+  <div class="large-5 columns">
+    <div class="panel with-header">
+      <div class="panel-header">
+        <h3>Some stuff</h3>
+      </div>
+      <div class="panel-content">      
+        <p>Here is a load of content in this panel</p>
+        <p>Craft beer migas sartorial, narwhal Austin distillery pour-over before they sold out. Actually Austin keytar keffiyeh, swag umami 3 wolf moon hashtag blog ennui Neutra Pitchfork Thundercats. Locavore lo-fi actually American Apparel asymmetrical disrupt.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div style="height: 200px;"></div>
+
+
+
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/foundation/js/foundation.min.js"></script>
+<script src="js/app.js"></script>
+
+  
+</body>
+  
+</html>
