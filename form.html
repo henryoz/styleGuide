@@ -101,11 +101,11 @@
                     <div class="large-4 columns">
                         <div class="row collapse">
                             <label>Responseive ordering 3</label>
-                            <div class="small-9 columns">
-                                <input type="text" placeholder="small-9.columns" />
-                            </div>
                             <div class="small-3 columns">
-                                <span class="postfix">.com</span>
+                                <span class="prefix">@</span>
+                            </div>
+                            <div class="small-9 columns">
+                                <input type="text" placeholder="Twitter" />
                             </div>
                         </div>
                     </div>
@@ -115,6 +115,90 @@
 
         <p>Navigating through text fields may be done via touching, clicking or tabbing through elements. It must be clear to the user at all times where they are in the form.</p>
 
+        <h4>Textarea</h4>
+
+        <form>
+            <div class="row">
+                <div class="large-12 columns">
+                    <label>Text area example
+                        <textarea placeholder="Placeholder text"></textarea>
+                    </label>
+                </div>
+            </div>
+        </form>
+
+        <pre><code class="language-html">
+            <div class="code-container">
+
+            </div>
+        </code></pre>
+
+        <h4>Checkbox</h4>
+
+        <form>
+            <div class="row">
+                <div class="large-12 columns">
+                    <label>Ch-ch-check it out</label>
+                    <input id="option1" type="checkbox"><label for="option1">Option 1</label>
+                    <input id="option2" type="checkbox"><label for="option2">Option 2</label>
+                    <input id="option3" type="checkbox"><label for="option3">Option 2</label>
+                    <input id="option4" type="checkbox"><label for="option4">Option 2</label>
+                </div>
+            </div>
+        </form>
+
+        <h4>Radio</h4>
+
+        <form>
+            <div class="row">
+                <div class="large-6 columns">
+                    <label>Choose Your Favorite</label>
+                    <input type="radio" name="meat" value="Steak" id="meatSteak"><label for="meatSteak">Steak</label>
+                    <input type="radio" name="meat" value="Chicken" id="meatChicken"><label for="meatChicken">Chicken</label>
+                    <input type="radio" name="meat" value="Tuna" id="meatTuna"><label for="meatTuna">Tuna</label>
+                    <input type="radio" name="meat" value="Pork" id="meatPork"><label for="meatPork">Pork</label>
+                </div>
+            </div>
+        </form>
+
+        <h4>Dropdown</h4>
+
+        <form>
+            <div class="row">
+                <div class="large-12 columns">
+                    <label>Choose an option
+                        <select>
+                            <option value="default">Please select...</option>
+                            <option value="protein">Protein</option>
+                            <option value="carbs">Carbohydrates</option>
+                            <option value="fat">Fat</option>
+                            <option value="fibre">Fibre</option>
+                        </select>
+                    </label>
+                </div>
+            </div>
+        </form>
+
+        <h4>Slider</h4>
+
+        <form>
+            <div class="range-slider radius" data-slider="50">
+                <span class="range-slider-handle" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" style="-webkit-transform: translateX(431px); transform: translateX(431px);"></span>
+                <span class="range-slider-active-segment" style="width: 50%;"></span>
+                <input type="hidden" value="50">
+            </div>
+        </form>
+
+        <h4>Datepicker</h4>
+        <p>Foundation does not come with its own datepicker. We should use the jQueryUI datepicker and style it to match.</p>
+
+        <form>
+            <div class="large-6 columns">
+                <label>Date
+                    <input type="date" />
+                </label>
+            </div>
+        </form>
 
 
     </div>
