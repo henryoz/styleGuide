@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Buttons | Simitive Style Guide</title>
+  <link rel="stylesheet" href="css/app.css" />
+  <script src="bower_components/modernizr/modernizr.js"></script>
+</head>
+
+<body>
+
+<!-- The following is styling that is specific to this page, but is not part of the core Simitive style guide -->
+<style>
+h3.usage-case {
+  font-size: 2em;
+  border-bottom: 1px solid #999;
+  margin-top: 40px;
+}
+code {
+  font-size: 13px;
+}
+.example {
+  padding: 15px;
+  border: 1px solid #2a7;
+}
+</style>
+
+
+<div class="row">
+  <div class="large-12 columns">
+    <h1>Buttons</h1>
+    <p>
+      Below you will find all the different types of buttons available to use. Alongside each type you will find a guide for their suggested use and the markup required.
+    </p>
+  </div>
+</div>
+
+<!--
+DEFAULT BUTTONS
+-->
+<div class="row">
+  <div class="large-12 columns">
+    <h3 class="usage-case">Default Buttons</h3>
+    <h4>When to use them:</h4>
+    <p>
+      <ul>
+        <li>These buttons are for general purpose use and should be the most frequently used style of button on the site.</li>
+        <li>Upper or lowercase? To be discussed.</li>
+      </ul>
+    </p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="large-7 columns">
+    <div class="panel">
+      <pre><code>&lt;button&gt;Click me&lt;/button&gt;</code></pre>
+      <br>
+      <pre><code>&lt;a href=&quot;#&quot; class=&quot;button&quot;&gt;No, click me!&lt;/a&gt;</code></pre>
+    </div>
+  </div>
+  <div class="large-5 columns">
+    <button>Click me</button><br>
+    <a href="#" class="button">No, click me!</a>
+  </div>
+</div>
+
+<!--
+SECONDARY BUTTONS
+-->
+<div class="row">
+  <div class="large-12 columns">
+    <h3 class="usage-case">Secondary Buttons</h3>
+    <h4>When to use them:</h4>
+    <p>
+      <ul>
+        <li>There may or not be a use for a second style of button.</li>
+        <li>Upper or lowercase? To be discussed.</li>
+      </ul>
+    </p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="large-7 columns">
+    <div class="panel">
+      <pre><code>&lt;button class="secondary"&gt;Click me&lt;/button&gt;</code></pre>
+      <br>
+      <pre><code>&lt;a href=&quot;#&quot; class=&quot;button secondary&quot;&gt;No, click me!&lt;/a&gt;</code></pre>
+    </div>
+  </div>
+  <div class="large-5 columns">
+    <button class="secondary">Click me</button><br>
+    <a href="#" class="button secondary">No, click me!</a>
+  </div>
+</div>
+
+<!--
+BUTTON SIZES
+-->
+<div class="row">
+  <div class="large-12 columns">
+    <h3 class="usage-case">Buttons Sizes</h3>
+    <h4>When to use them:</h4>
+    <p>
+      <ul>
+        <li>There may or not be cases where it is useful to use bigger or smaller buttons.</li>
+      </ul>
+    </p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="large-7 columns">
+    <div class="panel">
+      <pre><code>&lt;a href=&quot;#&quot; class=&quot;button tiny&quot;&gt;Tiny Button&lt;/a&gt;</code></pre>
+      <br>
+      <pre><code>&lt;a href=&quot;#&quot; class=&quot;button small&quot;&gt;Small Button&lt;/a&gt;</code></pre>
+      <br>
+      <pre><code>&lt;a href=&quot;#&quot; class=&quot;button&quot;&gt;Default Button&lt;/a&gt;</code></pre>
+      <br>
+      <pre><code>&lt;a href=&quot;#&quot; class=&quot;button large&quot;&gt;Large Button&lt;/a&gt;</code></pre>
+      <br>
+      <pre><code>&lt;a href=&quot;#&quot; class=&quot;button expanded&quot;&gt;Expanded Button&lt;/a&gt;</code></pre>
+      <br>
+    </div>
+  </div>
+  <div class="large-5 columns">
+    <a href="#" class="button tiny">Tiny Button</a><br>
+    <a href="#" class="button small">Small Button</a><br>
+    <a href="#" class="button">Default Button</a><br>
+    <a href="#" class="button large">Large Button</a><br>
+    <a href="#" class="button expand">Expanded Button</a><br>
+  </div>
+</div>
+
+<!--
+SPECIAL BUTTONS
+-->
+<div class="row">
+  <div class="large-12 columns">
+    <h3 class="usage-case">Special Buttons</h3>
+    <h4>When to use them:</h4>
+    <p>
+      <ul>
+        <li>These are best used when validating things.</li>
+      </ul>
+    </p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="large-7 columns">
+    <div class="panel">
+      <pre><code>&lt;a href=&quot;#&quot; class=&quot;button success&quot;&gt;Success Button&lt;/a&gt;</code></pre>
+      <br>
+      <pre><code>&lt;a href=&quot;#&quot; class=&quot;button alert&quot;&gt;Alert Button&lt;/a&gt;</code></pre>
+      <br>
+      <pre><code>&lt;a href=&quot;#&quot; class=&quot;button disabled&quot;&gt;Disabled Button&lt;/a&gt;</code></pre>
+      <br>
+    </div>
+  </div>
+  <div class="large-5 columns">
+    <a href="#" class="button success">Success Button</a><br>
+    <a href="#" class="button alert">Alert Button</a><br>
+    <a href="#" class="button disabled">Disabled Button</a><br>
+  </div>
+</div>
+
+<div class="row">
+  <div class="large-12 columns">
+    <div class="example">
+      <h4>Example</h4>
+      <input id="thermo" type="checkbox">
+      <label for="thermo">Click to confirm you understand the laws of thermodynamics</label>
+      <button class="disabled" id="continue">Continue</button>
+    </div>
+  </div>
+</div>
+
+
+
+
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/foundation/js/foundation.min.js"></script>
+<script src="js/app.js"></script>
+
+<!-- Some script for the example -->
+<script>
+$(document).ready(function(){
+  $('#thermo').click(function() {
+  console.log('what da hell');
+    if ($('#thermo').is(':checked')) {
+      $('#continue').addClass('success').removeClass('disabled');
+    }
+    else {
+      $('#continue').removeClass('success').addClass('disabled');
+    }
+  });
+})
+</script>
+
+  
+</body>
+  
+</html>
