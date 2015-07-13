@@ -1,0 +1,44 @@
+/**************************************************
+* Custom Styling for a.button and button elements *
+**************************************************/
+
+/**
+ * Default Button / General Button Settings
+ */
+$default-btn-color: #46749D;
+
+button, .button {
+  background-color: $default-btn-color;
+  transition: background-color 200ms ease-out;
+  padding: 12px 18px;
+  border-radius: 3px;
+  border: 0;
+  // This may not be necessary if we change the size of one 'em'
+  font-size: 14px;
+  &:hover, &:focus {
+    background-color: darken($default-btn-color, 8%);
+  }
+}
+
+/**
+ * Secondary Button
+ */
+button.secondary, .button.secondary {
+  border: 1px solid #ccc;
+  &:hover, &:focus {
+    background-color: #cfcfcf;
+  }
+}
+
+/**
+ * Button Sizes
+ */
+button.tiny, .button.tiny {
+  padding: 8px 14px;
+}
+button.small, .button.small {
+  padding: 10px 16px;
+}
+button.large, .button.large {
+  padding: 14px 20px;
+}
