@@ -1,0 +1,42 @@
+/**
+ * Styles for WAMS Mock-up Page
+ * 
+ * This is pretty much throw-away
+ */
+
+/**
+ * Variables
+ */
+$dark-blue: #44749D;
+$light-blue: #C6D4E1;
+$mid-blue: darken(#C6D4E1, 15%);
+
+/**
+ * Navbar
+ */
+.contain-to-grid.wams {
+  background-color: $mid-blue;
+}
+nav.wams {
+  background-color: $mid-blue;
+  .name h1 a {
+    color: darken($dark-blue, 17%);
+    font-size: 28px;
+    font-family: 'Leckerli One', sans-serif;
+  }
+  .top-bar-section ul li {
+    background-color: $mid-blue;
+  }
+  .top-bar-section li:not(.has-form) a:not(.button) {
+    background-color: $mid-blue;
+  }
+  .top-bar-section li:not(.has-form) a:not(.button):hover {
+    background-color: darken($mid-blue, 10%);
+  }
+  .top-bar-section .dropdown li:not(.has-form):not(.active)>a:not(.button) {
+    background-color: $mid-blue;
+    &:hover {
+      background-color: darken($mid-blue, 10%);
+    }
+  }
+}

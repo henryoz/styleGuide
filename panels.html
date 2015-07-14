@@ -1,14 +1,12 @@
-<!DOCTYPE html>
-<html>
-
+<!doctype html>
+<html class="no-js" lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Panels | Simitive Style Guide</title>
-  <link rel="stylesheet" href="css/app.css" />
-  <script src="bower_components/modernizr/modernizr.js"></script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Panels | Simitive Style Guide</title>
+    <link rel="stylesheet" href="css/app.css" />
+    <script src="bower_components/modernizr/modernizr.js"></script>
 </head>
-
 <body>
 
 <!-- The following is styling that is specific to this page, but is not part of the core Simitive style guide -->
@@ -27,88 +25,206 @@ code {
 }
 </style>
 
+<div class="fixed">
+    <nav class="top-bar" data-topbar role="navigation">
+        <ul class="title-area">
+            <li class="name">
+                <h1><a href="index.html">Simitive Style Guide</a></h1>
+            </li>
+            <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+            <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+        </ul>
 
-<div class="row">
-  <div class="large-12 columns">
-    <h1>Panels</h1>
-    <p>
-      Panels can be used for a variety of things.
-    </p>
-  </div>
+        <section class="top-bar-section">
+            <!-- Right Nav Section -->
+            <ul class="right">
+                <li class="has-dropdown">
+                    <a href="#">Styles</a>
+                    <ul class="dropdown">
+                        <li><a href="form.html">Forms</a></li>
+                        <li><a href="buttons.html">Buttons</a></li>
+                        <li><a href="panels.html">Panels</a></li>
+                        <li><a href="tabs.html">Tabs</a></li>
+                    </ul>
+                </li>
+                <li class="has-dropdown">
+                    <a href="#">Standards</a>
+                    <ul class="dropdown">
+                        <li><a href="#">PHP</a></li>
+                        <li><a href="#">JavaScript</a></li>
+                        <li><a href="#">HTML</a></li>
+                        <li><a href="#">SASS</a></li>
+                        <li><a href="#">BeHat</a></li>
+                        <li><a href="#">Jasmine</a></li>
+                    </ul>
+                </li>
+                <li class="has-dropdown">
+                    <a href="#">Toolset</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Composer</a></li>
+                        <li><a href="#">npm</a></li>
+                        <li><a href="#">Jenkins</a></li>
+                    </ul>
+                </li>
+                <li class="has-dropdown">
+                    <a href="#">Accessibility</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Technologies</a></li>
+                        <li><a href="#">Guidelines</a></li>
+                        <li><a href="#">Tools</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+    </nav>
 </div>
 
-<!--
-BASIC PANEL
--->
-<div class="row">
-  <div class="large-12 columns">
-    <h3 class="usage-case">Basic Panel</h3>
-    <h4>When to use them:</h4>
-    <p>
-      <ul>
-        <li>IDK</li>
-      </ul>
-    </p>
-  </div>
-</div>
+<div class="row" style="padding-bottom: 200px;">
 
-<div class="row">
-  <div class="large-7 columns">
-    <div class="panel">
-      <pre><code>&lt;div class=&quot;panel&quot;&gt;</code></pre>
-      <span style="font-family:monospace;">// Content...</span>
-      <pre><code>&lt;/div&gt;</code></pre>
+    <div class="large-3 medium-4 columns">
+        <div class="hide-for-small">
+            <div class="sidebar">
+                <nav>
+                    <ul class="side-nav">
+                        <li class="heading">Overview</li>
+                        <li class="divider"></li>
+                        <li class="heading"><a href="#basic">Basic Panel</a></li>
+                        <li class="heading"><a href="#card">Card-style Panel</a></li>
+                        <li class="heading"><a href="#block">Block-style Panel</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
     </div>
-  </div>
-  <div class="large-5 columns">
-    <div class="panel">
-      <h3>Some stuff</h3>
-      <p>Here is a load of content in this panel</p>
-      <p>Craft beer migas sartorial, narwhal Austin distillery pour-over before they sold out. Actually Austin keytar keffiyeh, swag umami 3 wolf moon hashtag blog ennui Neutra Pitchfork Thundercats. Locavore lo-fi actually American Apparel asymmetrical disrupt.</p>
-    </div>
-  </div>
-</div>
+
+    <div class="large-9 medium-8 columns">
 
 
-<!--
-COLOURFUL PANEL
--->
-<div class="row">
-  <div class="large-12 columns">
-    <h3 class="usage-case">Panel with Header</h3>
-    <h4>When to use them:</h4>
-    <p>
-      <ul>
-        <li>Note to self: come up with better class name than 'with-header'.</li>
-      </ul>
-    </p>
-  </div>
-</div>
+        <div class="row">
+          <div class="large-12 columns">
+            <h1>Panels</h1>
+            <p>
+              Panels can be used for a variety of things.
+            </p>
+          </div>
+        </div>
 
-<div class="row">
-  <div class="large-7 columns">
-    <div class="panel">
-      <pre><code>&lt;div class=&quot;panel with-header&quot;&gt;</code></pre>
-      <pre><code>&lt;div class=&quot;panel-header&quot;&gt;</code></pre>
-      <span style="font-family:monospace;">// Header...</span>
-      <pre><code>&lt;/div&gt;</code></pre>
-      <pre><code>&lt;div class=&quot;panel-content&quot;&gt;</code></pre>
-      <span style="font-family:monospace;">// Content...</span>
-      <pre><code>&lt;/div&gt;</code></pre>
-      <pre><code>&lt;/div&gt;</code></pre>
+        <!--
+        BASIC PANEL
+        -->
+        <div class="row" id ="basic">
+          <div class="large-12 columns">
+            <h3 class="usage-case">Basic Panel</h3>
+            <h4>When to use them:</h4>
+            <p>
+              <ul>
+                <li>Probably not too often, the below panels are nicer.</li>
+              </ul>
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="large-7 columns">
+            <div class="panel">
+              <pre>&lt;div class=&quot;panel&quot;&gt;
+    // Content
+&lt;/div&gt;</pre>
+            </div>
+          </div>
+          <div class="large-5 columns">
+            <div class="panel">
+              <h3>Some stuff</h3>
+              <p>Here is a load of content in this panel</p>
+              <p>Craft beer migas sartorial, narwhal Austin distillery pour-over before they sold out. Actually Austin keytar keffiyeh, swag umami 3 wolf moon hashtag blog ennui Neutra Pitchfork Thundercats. Locavore lo-fi actually American Apparel asymmetrical disrupt.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <!--
+        CARD-STYLE PANEL
+        -->
+        <div class="row" id="card">
+          <div class="large-12 columns">
+            <h3 class="usage-case">Card-style Panel</h3>
+            <h4>When to use them:</h4>
+            <p>
+              <ul>
+                <li>For use... sometimes</li>
+              </ul>
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="large-7 columns">
+            <div class="panel">
+              <pre>&lt;div class=&quot;panel card&quot;&gt;
+  &lt;div class=&quot;panel-header&quot;&gt;
+    // Header...
+  &lt;/div&gt;
+  &lt;div class=&quot;panel-content&quot;&gt;
+    // Content...
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+            </div>
+          </div>
+          <div class="large-5 columns">
+            <div class="panel card">
+              <div class="panel-header">
+                <h3>Some stuff</h3>
+              </div>
+              <div class="panel-content">      
+                <p>Here is a load of content in this panel</p>
+                <p>Craft beer migas sartorial, narwhal Austin distillery pour-over before they sold out. Actually Austin keytar keffiyeh, swag umami 3 wolf moon hashtag blog ennui Neutra Pitchfork Thundercats. Locavore lo-fi actually American Apparel asymmetrical disrupt.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 
+        BLOCK STYLE PANEL
+        -->
+        <div class="row" id="block">
+          <div class="large-12 columns">
+            <h3 class="usage-case">Block-style Panel</h3>
+            <h4>When to use them:</h4>
+            <p>
+              <ul>
+                <li>For use... sometimes</li>
+              </ul>
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="large-7 columns">
+            <div class="panel">
+              <pre>&lt;div class=&quot;panel block&quot;&gt;
+  &lt;div class=&quot;panel-header&quot;&gt;
+    // Header...
+  &lt;/div&gt;
+  &lt;div class=&quot;panel-content&quot;&gt;
+    // Content...
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+            </div>
+          </div>
+          <div class="large-5 columns">
+            <div class="panel block">
+              <div class="panel-header">
+                <h3>Some stuff</h3>
+              </div>
+              <div class="panel-content">      
+                <p>Here is a load of content in this panel</p>
+                <p>Craft beer migas sartorial, narwhal Austin distillery pour-over before they sold out. Actually Austin keytar keffiyeh, swag umami 3 wolf moon hashtag blog ennui Neutra Pitchfork Thundercats. Locavore lo-fi actually American Apparel asymmetrical disrupt.</p>
+              </div>
+            </div>
+          </div>
+        </div>        
+
     </div>
-  </div>
-  <div class="large-5 columns">
-    <div class="panel with-header">
-      <div class="panel-header">
-        <h3>Some stuff</h3>
-      </div>
-      <div class="panel-content">      
-        <p>Here is a load of content in this panel</p>
-        <p>Craft beer migas sartorial, narwhal Austin distillery pour-over before they sold out. Actually Austin keytar keffiyeh, swag umami 3 wolf moon hashtag blog ennui Neutra Pitchfork Thundercats. Locavore lo-fi actually American Apparel asymmetrical disrupt.</p>
-      </div>
-    </div>
-  </div>
 </div>
 
 
