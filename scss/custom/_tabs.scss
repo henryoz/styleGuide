@@ -1,0 +1,22 @@
+.tabs {
+  border-bottom: 1px solid #bbb;
+  .tab-title > a {
+    padding: 8px 16px;
+    margin-bottom: -1px;
+    background: none;
+    color: #777;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    &:hover {
+      background: #f3f3f3;
+      color: #555;
+    }
+  }
+  .tab-title.active a {
+    color: #555;
+    border-top: 1px solid #bbb;
+    border-right: 1px solid #bbb;
+    border-left: 1px solid #bbb;
+    z-index: 2;
+  }
+}

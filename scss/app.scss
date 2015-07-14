@@ -1,8 +1,15 @@
 @import "settings";
 @import "foundation";
+@import "custom/buttons";
+@import "custom/panels";
 @import "custom/styleguide";
 @import "custom/code";
 @import "custom/buttons";
+@import "custom/tabs";
+
+// The following is not part of the core styling
+@import "custom/wams";
+
 @import "custom/sidebar";
 
 // Or selectively include components
