@@ -15,28 +15,38 @@ $mid-blue: darken(#C6D4E1, 15%);
  * Navbar
  */
 .contain-to-grid.wams {
-  background-color: $mid-blue;
+  background-color: $dark-blue;
 }
 nav.wams {
-  background-color: $mid-blue;
+  background-color: $dark-blue;
   .name h1 a {
-    color: darken($dark-blue, 17%);
-    font-size: 28px;
+    color: $light-blue;
+    font-size: 32px;
     font-family: 'Leckerli One', sans-serif;
   }
   .top-bar-section ul li {
-    background-color: $mid-blue;
+    background-color: $dark-blue;
   }
   .top-bar-section li:not(.has-form) a:not(.button) {
-    background-color: $mid-blue;
+    background-color: $dark-blue;
   }
   .top-bar-section li:not(.has-form) a:not(.button):hover {
-    background-color: darken($mid-blue, 10%);
+    background-color: darken($dark-blue, 10%);
   }
   .top-bar-section .dropdown li:not(.has-form):not(.active)>a:not(.button) {
-    background-color: $mid-blue;
+    background-color: $dark-blue;
     &:hover {
-      background-color: darken($mid-blue, 10%);
+      background-color: darken($dark-blue, 10%);
     }
+  }
+}
+
+/**
+ * Whack all styles within body.wams
+ */
+body.wams {
+  background: #f2f2f2;
+  .panel-content{
+    background: #fff;
   }
 }
