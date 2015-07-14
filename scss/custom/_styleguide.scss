@@ -9,7 +9,7 @@
   textarea:focus:-ms-input-placeholder {color: $focus_color}
 }
 
-@include placeholder-focus(#fff);
+@include placeholder-focus($focus_color);
 
 .sidebar {
   background-color: #FAFAFA;
