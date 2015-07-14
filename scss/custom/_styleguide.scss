@@ -1,3 +1,16 @@
+@mixin placeholder-focus($focus_color) {
+  input:focus::-webkit-input-placeholder {color: $focus_color}
+  textarea:focus::-webkit-input-placeholder {color: $focus_color}
+  input:focus:-moz-placeholder {color: $focus_color}
+  textarea:focus:-moz-placeholder {color: $focus_color}
+  input:focus::-moz-placeholder {color: $focus_color}
+  textarea:focus::-moz-placeholder {color: $focus_color}
+  input:focus:-ms-input-placeholder {color: $focus_color}
+  textarea:focus:-ms-input-placeholder {color: $focus_color}
+}
+
+@include placeholder-focus(#fff);
+
 .sidebar {
   background-color: #FAFAFA;
 }
