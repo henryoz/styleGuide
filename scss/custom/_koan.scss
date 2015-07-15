@@ -10,3 +10,11 @@
   position:absolute;
   display:none;
 }
+
+.hero {
+  &.koan {
+    background-image: linear-gradient(to bottom right, #002f4b, #27501c);
+    background: url('https://download.unsplash.com/photo-1429966163023-c132bc887fdd') no-repeat center center;
+    height: 100vh;
+  }
+}
