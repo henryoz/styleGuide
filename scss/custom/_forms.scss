@@ -1,0 +1,5 @@
+input, textarea {
+  &:focus {
+    border-width: $input-focus-border-width;
+  }
+}

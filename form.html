@@ -63,7 +63,7 @@
     </nav>
 </div>
 
-<div class="row" style="padding-bottom: 200px;">
+<div class="row">
 
     <div class="large-3 medium-4 columns">
         <div class="hide-for-small">
@@ -119,6 +119,24 @@
 
         <p>This section of the guide covers basic appearance and functionality as it relates to our forms and their elements, using explanations and examples.</p>
 
+      <hr><h3>Form Guidelines</h3>
+      <h4>Labels, importance, and grouping</h4>
+      <ul>
+        <li>Every form field must have a concise, descriptive label</li>
+        <li>Labels should be positioned above their relevant field</li>
+        <li>Labels should be associated with form fields using the <code>for</code> attribute</li>
+        <li>Only require fields where absolutely necessary. Mandatory fields must be marked with a 'mandatory' label</li>
+        <li>Optional fields must be marked with an 'optional' label, except in cases where all fields on a form are optional</li>
+        <li>Fields should be ordered sensibly and in accordance with their relative importance</li>
+        <li>Fields should take up space proportional to their contents</li>
+        <li>All fields should take up 100% width on smaller screen sizes</li>
+        <li>Related fields should be grouped by a <code>fieldset</code> tag with an appropriate label</li>
+      </ul>
+
+      <h4>Focus</h4>
+      <li>Hover behaviour is best left to its defaults</li>
+      <li>Focused elements</li>
+
 
         <hr><h3>Form Elements</h3>
         <h4>Text</h4>
@@ -130,25 +148,15 @@
                 <legend>Text Fields</legend>
                 <div class="row">
                     <div class="large-12 columns">
-                        <label>Full width
+                        <label>Basic text field
                             <input type="text" placeholder="large-12.columns" />
                         </label>
                     </div>
                 </div>
                 <div class="row">
                     <div class="large-4 columns">
-                        <label>Responsive ordering 1
-                            <input type="text" placeholder="large-4.columns" />
-                        </label>
-                    </div>
-                    <div class="large-4 columns">
-                        <label>Responsive ordering 2
-                            <input type="text" placeholder="large-4.columns" />
-                        </label>
-                    </div>
-                    <div class="large-4 columns">
                         <div class="row collapse">
-                            <label>Responsive ordering 3</label>
+                            <label>Prefix example</label>
                             <div class="small-3 columns">
                                 <span class="prefix">@</span>
                             </div>
@@ -392,13 +400,23 @@
         <hr>
         <h4>Datepicker</h4>
         <p>Foundation does not come with its own datepicker. We should consider using the <a href="https://jqueryui.com/datepicker/" target="_blank">jQueryUI datepicker</a> and styling it to match.</p>
-
     </div>
-
-
-    <br><br><br>
-
 </div>
+
+<div class="spacer"></div>
+<footer class="layout--footer" role="contentinfo">
+  <div class="row">
+    <div class="small-12 large-6 columns">
+      <a href="http://www.simitive.com" target="_blank"><div id="footer-logo"></div></a>
+    </div>
+    <div class="small-12 large-6 columns">
+      <ul id="footer-links">
+        <li><a class="footer-link" href="koans.html">Wisdom</a></li>
+        <li>A <a class="footer-link" href="https://github.com/henryoz" target="_blank">Henry Osadzinski</a> / <a class="footer-link" href="https://github.com/markgibbons90" target="_blank">Mark Gibbons</a> joint</li>
+      </ul>
+    </div>
+  </div>
+</footer>
 
 
 

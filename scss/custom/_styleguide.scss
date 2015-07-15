@@ -9,8 +9,6 @@
   textarea:focus:-ms-input-placeholder {color: $focus_color}
 }
 
-@include placeholder-focus($focus_color);
-
 .spacer {
   font-size: 0;
   height: 45px;

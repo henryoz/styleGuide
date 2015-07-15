@@ -81,7 +81,7 @@ code {
     </nav>
 </div>
 
-<div class="row" style="padding-bottom: 200px;">
+<div class="row">
 
     <div class="large-3 medium-4 columns">
         <div class="hide-for-small">
@@ -252,8 +252,22 @@ SPECIAL BUTTONS
         </div>
     </div>
 </div>
+      </div></div>
 
-
+<div class="spacer"></div>
+<footer class="layout--footer" role="contentinfo">
+  <div class="row">
+    <div class="small-12 large-6 columns">
+      <a href="http://www.simitive.com" target="_blank"><div id="footer-logo"></div></a>
+    </div>
+    <div class="small-12 large-6 columns">
+      <ul id="footer-links">
+        <li><a class="footer-link" href="koans.html">Wisdom</a></li>
+        <li>A <a class="footer-link" href="https://github.com/henryoz" target="_blank">Henry Osadzinski</a> / <a class="footer-link" href="https://github.com/markgibbons90" target="_blank">Mark Gibbons</a> joint</li>
+      </ul>
+    </div>
+  </div>
+</footer>
 
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
 <script src="bower_components/foundation/js/foundation.min.js"></script>
@@ -263,7 +277,6 @@ SPECIAL BUTTONS
 <script>
 $(document).ready(function(){
   $('#thermo').click(function() {
-  console.log('what da hell');
     if ($('#thermo').is(':checked')) {
       $('#continue').addClass('success').removeClass('disabled');
     }
