@@ -21,9 +21,7 @@
   line-height: 0;
 }
 
-
 .hero {
-  background: url('http://i.imgur.com/FTLtCJC.jpg') no-repeat center center;
   background-size: cover;
   height: 95vh;
   &:before {
@@ -33,9 +31,17 @@
     right: 0;
     bottom: 0;
     left: 0;
-    background-image: linear-gradient(to bottom right,#002f4b, #994211);
+    background-image: linear-gradient(to bottom right, #002f4b, #994211);
     opacity: .8;
-  }
+    }
+    &.main {
+      background: url('http://i.imgur.com/FTLtCJC.jpg') no-repeat center center;
+    }
+    &.koan {
+      background-image: linear-gradient(to bottom right, #002f4b, #27501c);
+      background: url('https://download.unsplash.com/photo-1429966163023-c132bc887fdd') no-repeat center center;
+      height: 100vh;
+    }
   .intro {
     padding: 3rem;
     position: relative;
