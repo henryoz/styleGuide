@@ -3,3 +3,11 @@ input, textarea {
     border-width: $input-focus-border-width;
   }
 }
+
+h3 {
+  &.usage-case {
+    font-size: 2em;
+    //border-bottom: 1px solid #999;
+    margin-top: 40px;
+  }
+}
