@@ -1,0 +1,104 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Foundation</title>
+  <link href='http://fonts.googleapis.com/css?family=Philosopher:700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/app.css" />
+  <script src="bower_components/modernizr/modernizr.js"></script>
+</head>
+<body class="index">
+
+<div class="fixed">
+  <nav class="top-bar" data-topbar role="navigation">
+    <ul class="title-area">
+      <li class="name">
+        <h1><a href="index.html">Simitive Style Guide</a></h1>
+      </li>
+      <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+      <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+    </ul>
+
+    <section class="top-bar-section">
+      <!-- Right Nav Section -->
+      <ul class="right">
+        <li class="has-dropdown">
+          <a href="#">Styles</a>
+          <ul class="dropdown">
+            <li><a href="form.html">Forms</a></li>
+            <li><a href="buttons.html">Buttons</a></li>
+          </ul>
+        </li>
+        <li class="has-dropdown">
+          <a href="#">Standards</a>
+          <ul class="dropdown">
+            <li><a href="#">PHP</a></li>
+            <li><a href="#">JavaScript</a></li>
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">SASS</a></li>
+            <li><a href="#">BeHat</a></li>
+            <li><a href="#">Jasmine</a></li>
+          </ul>
+        </li>
+        <li class="has-dropdown">
+          <a href="#">Toolset</a>
+          <ul class="dropdown">
+            <li><a href="#">Composer</a></li>
+            <li><a href="#">npm</a></li>
+            <li><a href="#">Jenkins</a></li>
+          </ul>
+        </li>
+        <li class="has-dropdown">
+          <a href="#">Accessibility</a>
+          <ul class="dropdown">
+            <li><a href="#">Technologies</a></li>
+            <li><a href="#">Guidelines</a></li>
+            <li><a href="#">Tools</a></li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+  </nav>
+</div>
+
+<section class="hero koan">
+  <div class="row intro">
+    <div class="large-12 columns">
+      <h1 id="wise-koan">
+        <div id="quotes" class="slideshow">
+          <div class="textItem">The best icon is a text label</div>
+
+          <div class="textItem">Your function is too long</div>
+
+          <div class="textItem">The UI is there to get out of the way</div>
+
+          <div class="textItem">First emotion, then logic, then reflection</div>
+
+          <div class="textItem">For every :hover, a :focus</div>
+
+          <div class="textItem">Contrast first, colour last</div>
+
+          <div class="textItem">You are not the typical user</div>
+        </div>
+      </h1>
+    </div>
+  </div>
+</section>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/
+jquery/1.4.4/jquery.min.js"></script>
+<script type="text/javascript" src="http://malsup.github.com/jquery.cycle.all.js"></script>
+
+<script>
+  $(document).ready(function() {
+    $('.slideshow').cycle({
+      fx: 'fade',
+      random: true,
+
+    });
+  });
+</script>
+
+</body>
+</html>
