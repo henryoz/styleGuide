@@ -66,7 +66,7 @@
   <div class="row intro">
     <div class="large-12 columns">
       <h1 id="wise-koan">
-        <div id="quotes">
+        <div id="quotes" class="slideshow">
           <div class="textItem">The best icon is a text label</div>
 
           <div class="textItem">Your function is too long</div>
@@ -88,34 +88,16 @@
 
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/
 jquery/1.4.4/jquery.min.js"></script>
-<script type="text/javascript">
-  $(document).ready(function()
-  {
-    setupRotator();
-  });
+<script type="text/javascript" src="http://malsup.github.com/jquery.cycle.all.js"></script>
 
-  function setupRotator()
-  {
-    if($('.textItem').length > 1)
-    {
-      $('.textItem:first').addClass('current').fadeIn(3000);
-      setInterval('textRotate()', 6000);
-    }
-  }
-  function textRotate()
-  {
-    var current = $('#quotes > .current');
-    if(current.next().length == 0)
-    {
-      current.removeClass('current').fadeOut(2000);
-      $('.textItem:first').addClass('current').fadeIn(6000);
-    }
-    else
-    {
-      current.removeClass('current').fadeOut(2000);
-      current.next().addClass('current').fadeIn(6000);
-    }
-  }
+<script>
+  $(document).ready(function() {
+    $('.slideshow').cycle({
+      fx: 'fade',
+      random: true,
+
+    });
+  });
 </script>
 
 </body>
