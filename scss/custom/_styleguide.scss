@@ -16,8 +16,6 @@
 }
 
 .hero {
-  background-size: cover;
-  height: 95vh;
   &:before {
     content: '';
     position: absolute;
@@ -30,6 +28,8 @@
     }
     &.main {
       background: url('http://i.imgur.com/FTLtCJC.jpg') no-repeat center center;
+      background-size: cover;
+      height: 100%;
     }
 
 .intro {
