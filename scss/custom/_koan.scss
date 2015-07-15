@@ -10,3 +10,15 @@
   position:absolute;
   display:none;
 }
+
+.hero {
+  &.koan {
+    background: url('https://download.unsplash.com/photo-1429966163023-c132bc887fdd') no-repeat center center;
+    background-size: cover;
+    height: 100%;
+  }
+}
+
+#wise-koan {
+  line-height: 2em;
+}

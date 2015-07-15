@@ -1,0 +1,31 @@
+footer {
+  padding-top: 35px;
+  padding-bottom: 50px;
+  background: #333333;
+  color: #888;
+}
+
+#footer-logo {
+  margin-bottom: 10px;
+  background: url('http://www.simitive.com/sites/all/themes/simitive/images/simitive-logo-footer.png') no-repeat;
+  width: 210px;
+  height: 50px;
+}
+
+#footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  line-height: 2rem;
+}
+
+.footer-link {
+  color: #888;
+  font-weight: bold;
+  &:hover {
+    color: #C94209;
+  }
+  &:focus {
+    color: #C94209;
+  }
+}
